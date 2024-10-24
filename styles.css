@@ -1,0 +1,751 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #c1272d; /* Color de fondo rojo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    width: 300px;
+}
+
+.profile-picture {
+    position: relative;
+    margin-bottom: 60px;
+    
+}
+
+.profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    margin-left: 10px;
+}
+
+.camera-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.camera-icon img {
+    width: 20px;
+    height: 20px;
+    margin-top: 95px;
+}
+
+.edit-button {
+    position: fixed;
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 12px;
+    cursor: pointer;
+    margin-right: 100px;
+    margin-top: 130px;
+    
+    
+}
+
+.input-container {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.continue-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #c1272d;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button:hover {
+    background-color: #a0201f;
+}
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #c1272d; /* Fondo rojo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-page {
+    width: 85%;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Estilos del header y navegación */
+.header {
+    background-color: #c1272d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    border-bottom: 2px solid #000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 50px; /* Ajuste de altura del logo */
+    margin-right: 10px;
+}
+
+.navigation {
+    display: flex;
+    gap: 10px;
+}
+
+.navigation button {
+    background: #fff;
+    border: 1px solid #000;
+    color: #c1272d;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.navigation button:hover {
+    background-color: #f2f2f2;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin-right: 5px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Estilos del contenido principal */
+.main-content {
+    display: flex;
+}
+
+.sidebar {
+    background-color: #f2f2f2;
+    padding: 15px;
+    width: 180px;
+    border-right: 2px solid #000;
+    text-align: center;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #c1272d;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    background-color: #c1272d;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li:hover {
+    background-color: #a0201f;
+}
+
+/* Estilos de la sección de perfil */
+.profile-info {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #000;
+}
+
+.user-info {
+    display: flex;
+    border: 2px solid #000;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.user-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    border: 1px solid #000;
+    margin-right: 20px;
+}
+
+.details {
+    flex: 1;
+    text-align: left;
+}
+
+.description {
+    border-top: 2px solid #000;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+/* Estilos para los proyectos y comentarios */
+.extra-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.projects, .comments {
+    flex: 1;
+    border: 2px solid #000;
+    padding: 10px;
+    background-color: #f9f9f9;
+    height: 200px;
+    overflow-y: auto;
+}
+
+.projects h3, .comments h3 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #000;
+}
+
+/* Estilo para los comentarios individuales */
+.comment {
+    border-top: 1px solid #000;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Ajustes adicionales */
+.profile-page h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.profile-page p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+/*------------------------------------/*
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #c1272d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 800px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Estilos del header */
+.header {
+    background-color: #c1272d;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid #000;
+}
+
+.navigation button {
+    background: #fff;
+    border: 1px solid #000;
+    color: #c1272d;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.search-bar input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 5px;
+}
+
+/* Estilos del formulario */
+.form-container {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+
+/* Estilos para los botones de adjuntar */
+.attachment-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.attachment-buttons button,
+.custom-file-upload {
+    background-color: #b30000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.attachment-buttons button:hover,
+.custom-file-upload:hover {
+    background-color: #990000;
+}
+
+/* Estilos para ocultar el input de archivo real */
+#documentInput {
+    display: none;
+}
+
+.submit-button {
+    background-color: #c1272d;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #a0201f;
+}
+/*_________________________________________________________*/
+/* Estilos comunes foro */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d23a3a;
+    color: #333;
+    margin: 0;
+    padding-top: 70px; /* Espacio para el header */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #a02020;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 70px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.buscador {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.search-btn {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.main-container {
+    display: flex;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-right: 2px solid #ccc;
+}
+
+.sidebar-section {
+    margin-bottom: 20px;
+}
+
+.sidebar-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sidebar-section button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #a02020;
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sidebar-section button:hover {
+    background-color: #c12c2c;
+}
+
+.content {
+    width: 80%;
+    padding-left: 20px;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.user-details {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding-right: 20px;
+    border-right: 2px solid black;
+}
+
+.user-img {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+.info p {
+    margin-bottom: 10px;
+}
+
+.user-description {
+    padding-left: 20px;
+    width: 50%;
+}
+
+.forum-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foro-box, .comments-box {
+    width: 48%;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+h3 {
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.duda, .respuesta {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.duda:last-child, .respuesta:last-child {
+    border-bottom: none;
+}
+/*______________________________________________________*/
+/* Reset básico */
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    border: 1px solid #CCC;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C02E2F;
+    padding: 10px;
+    color: white;
+}
+
+.header button {
+    background-color: white;
+    color: #C02E2F;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.header .search {
+    padding: 5px;
+    width: 150px;
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    margin-top: 10px;
+}
+
+.sidebar {
+    background-color: #C02E2F;
+    width: 150px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+}
+
+.year, .months {
+    margin-bottom: 20px;
+}
+
+.year h3, .months h3 {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.year button,
+.months button {
+    background-color: white;
+    border: none;
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+    color: #C02E2F;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: left;
+}
+
+.main-content {
+    flex: 1;
+    padding: 15px;
+}
+
+.user-info {
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid #CCC;
+    padding: 15px;
+    background-color: white;
+}
+
+.user-photo {
+    width: 80px;
+    height: 80px;
+    background-color: #CCC;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.details p,
+.description h3 {
+    margin-bottom: 8px;
+}
+
+.description p {
+    color: #666;
+}
+
+.content-section {
+    margin-top: 15px;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #CCC;
+}
+
+.professors {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.professor {
+    text-align: center;
+}
+
+.professor-photo {
+    width: 70px;
+    height: 70px;
+    background-color: #CCC;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.study-plan {
+    background-color: #F4F4F4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
